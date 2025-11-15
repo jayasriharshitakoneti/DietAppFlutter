@@ -53,7 +53,7 @@ class PureAIGroqService {
           'Content-Type': 'application/json',
         },
         body: jsonEncode({
-          'model': 'llama3-70b-8192',
+          'model': 'llama-3.1-8b-instant',
           'messages': [
             {
               'role': 'system',
@@ -1157,37 +1157,3 @@ class ChatMessage extends StatelessWidget {
   }
 }
 
-/*
-🚀 FINAL SETUP:
-
-1. Add to pubspec.yaml:
-dependencies:
-  flutter:
-    sdk: flutter
-  http: ^1.1.0
-  flutter_dotenv: ^5.1.0
-  shared_preferences: ^2.2.2
-
-flutter:
-  assets:
-    - .env
-
-2. Create .env file:
-GROQ_API_KEY=your_groq_key_here
-
-3. Run:
-flutter pub get
-flutter run -d chrome
-
-✅ WORKING FEATURES:
-• Real Groq AI integration
-• Complete recipe popups with cooking steps
-• Multi-language ingredient tracking
-• Persistent chat history and data
-• Auto-scroll chat
-• Beautiful UI
-
-🧪 TEST:
-"I have vankaya and rice, give me a recipe"
-"నేను టమాట కలిగి ఉన్నాను"
-*/
